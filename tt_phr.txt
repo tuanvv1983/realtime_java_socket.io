@@ -1,0 +1,14 @@
+
++) Khách hàng đến lần đầu thực hiện:
+ -> Nhập các dữ liệu cơ bản CMT(Bắt buộc), Tên, Địa chỉ, Ngày Sinh...vv
+ -> Các dữ liệu về tiểu sử sức khỏe (PHR)
+ -> Thực hiện quét vân tay sinh trắc, lấy ScanID_VanTay Map vào ID của khách hàng  + CMT
+ -> Thực hiện quét nhận dạng khuôn mặt, lấy ScanID_Face Map vào ID của khách hàng + CMT
++) Khách hàng đến các lần sau:
+ -> Xuất trình CMT : Có thể View thông tin trên màn hình quản lý người sử dụng.
+ -> Quét vân tay -> Phát hiện ScanID_VanTay trong hệ thống vân tay -> Đẩy Realtime đến hệ thống quản lý -> Hiển thị trực tiếp lên hệ thống giám sát của người dùng.
+ -> Tương tự Quét khuôn mặt -> Phát hiện ScanID_Face trong hệ thống Cam -> Đẩy Realtime đến hệ thống quản lý => Hiển thị trực tiếp lên hệ thống giám sát người dùng.
+ -> Có thể yêu cầu Khách hàng đến thực hiện các bước xuất trình CMT + Kiểm tra Vân tay + Quét Cam để xác thực đồng bộ kết hợp các yếu tố.
+ -> Bổ xung các thông tin thêm và theo yêu cầu.
++) Khách hàng đến (Cả lần đầu và các lần tiếp sau) nếu có các đầu API từ các bên liên quan(Bệnh Viện, Trung tâm y tế,...) có thể gọi API với thông tin cơ bản là CMT để lấy thông tin về để đối chiếu Mapping, bổ xung thông tin, cũng như kiểm tra các thông tin cần thiết theo yêu cầu.
+
